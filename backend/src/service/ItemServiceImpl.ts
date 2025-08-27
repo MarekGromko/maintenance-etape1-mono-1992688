@@ -50,3 +50,7 @@ export class ItemServiceImpl extends IItemService {
     }
 
 }
+
+export {
+    IItemService
+}
