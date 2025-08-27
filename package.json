@@ -1,0 +1,12 @@
+{
+  "name": "maintenance-etape1-mono-1992688",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+  }
+}
