@@ -1,5 +1,5 @@
 import { Result } from "../internal/Result";
-import { User } from "../model/User";
+import { User } from "../data/User";
 /**
  * Interface for user-related operations.
  */

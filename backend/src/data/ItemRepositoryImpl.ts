@@ -1,7 +1,7 @@
 import { IDatabaseDriver } from "../core/IDatabaseDriver";
 import { IItemRepository } from "../core/IItemRepository";
 import Services from "../internal/Services";
-import { Item } from "../model/Item";
+import { Item } from "../data/Item";
 
 function mapRow(row: any): Item {
     return Item.builder()

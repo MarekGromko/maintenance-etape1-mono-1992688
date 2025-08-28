@@ -2,7 +2,7 @@ import { IItemRepository } from "../core/IItemRepository";
 import { IItemService, ItemServiceErr } from "../core/IItemService";
 import { Result } from "../internal/Result";
 import Services from "../internal/Services";
-import { Item } from "../model/Item";
+import { Item } from "../data/Item";
 
 export class ItemServiceImpl extends IItemService {
     private itemRepo: IItemRepository;

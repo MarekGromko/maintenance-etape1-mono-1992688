@@ -1,5 +1,5 @@
 import { Result } from "../internal/Result";
-import { Item } from "../model/Item";
+import { Item } from "../data/Item";
 // TODO: Add methods for populating the leases
 /**
  * Interface for the item-related service

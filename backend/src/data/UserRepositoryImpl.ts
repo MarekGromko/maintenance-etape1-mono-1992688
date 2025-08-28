@@ -1,7 +1,7 @@
 import { IDatabaseDriver } from "../core/IDatabaseDriver";
 import { IUserRepository } from "../core/IUserRepository";
 import Services from "../internal/Services";
-import { User } from "../model/User";
+import { User } from "../data/User";
 
 function mapRow(row: any): User {
     return User.builder()

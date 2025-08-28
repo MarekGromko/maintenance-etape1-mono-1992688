@@ -1,8 +1,8 @@
 import * as core from "./core/core";
 import { hostBuilder } from "./internal/Services";
 import { SQLiteDriver } from "./data/SQLiteDriver";
-import { UserRepositoryImpl } from "./repository/UserRepositoryImpl";
-import { ItemRepositoryImpl } from "./repository/ItemRepositoryImpl";
+import { UserRepositoryImpl } from "./data/UserRepositoryImpl";
+import { ItemRepositoryImpl } from "./data/ItemRepositoryImpl";
 import { UserServiceImpl } from "./service/UserServiceImpl";
 import { ItemServiceImpl } from "./service/ItemServiceImpl";
 

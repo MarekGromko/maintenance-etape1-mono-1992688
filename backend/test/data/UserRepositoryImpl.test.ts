@@ -1,10 +1,10 @@
-import { UserRepositoryImpl, IUserRepository } from '../../src/repository/UserRepositoryImpl';
+import { UserRepositoryImpl, IUserRepository } from '../../src/data/UserRepositoryImpl';
 import { IDatabaseDriver } from '../../src/core/IDatabaseDriver';
 import { expect } from 'chai';
 import Services, { ServicesHost } from '../../src/internal/Services';
-import { User } from '../../src/model/User';
+import { User } from '../../src/data/User';
 
-describe("repository.UserRepositoryImpl", () => {
+describe("data.UserRepositoryImpl", () => {
     let host: ServicesHost;
     let last_sql: string = "";
     let last_params: any[] = [];

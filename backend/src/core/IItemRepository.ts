@@ -1,4 +1,4 @@
-import { Item } from "../model/Item";
+import { Item } from "../data/Item";
 /**
  * Interface for the item repository.
  * Introduce the basic CRUD operations on the item table

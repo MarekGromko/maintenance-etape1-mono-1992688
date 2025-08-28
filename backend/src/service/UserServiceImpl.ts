@@ -2,7 +2,7 @@ import { IUserRepository } from "../core/IUserRepository";
 import { IUserService, UserServiceErr } from "../core/IUserService";
 import { Result } from "../internal/Result";
 import Services from "../internal/Services";
-import { User } from "../model/User";
+import { User } from "../data/User";
 
 export class UserServiceImpl extends IUserService {
     private userRepo: IUserRepository;

@@ -1,7 +1,7 @@
 import { expect } from "chai";
 import { IItemRepository } from "../../src/core/IItemRepository";
 import Services, { ServicesHost } from "../../src/internal/Services";
-import { Item } from "../../src/model/Item";
+import { Item } from "../../src/data/Item";
 import { IItemService, ItemServiceImpl } from "../../src/service/ItemServiceImpl";
 
 describe("service.ItemServiceImpl", () => {

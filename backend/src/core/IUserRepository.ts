@@ -1,4 +1,4 @@
-import { User } from "../model/User";
+import { User } from "../data/User";
 
 /**
  * Interface fot the user repository.
