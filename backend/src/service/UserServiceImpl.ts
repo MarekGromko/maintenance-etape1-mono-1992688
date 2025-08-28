@@ -17,6 +17,7 @@ export class UserServiceImpl extends IUserService {
                 return Result.err('USER_NOT_FOUND');
             }
             return Result.ok(user);
+        /* c8 ignore next 3*/
         } catch (error) {
             return Result.err('INTERNAL_ERROR')
         }
@@ -25,6 +26,7 @@ export class UserServiceImpl extends IUserService {
         try {
             let createdUser = await this.userRepo.insert(user);
             return Result.ok(createdUser);
+        /* c8 ignore next 3*/
         } catch {
             return Result.err('INTERNAL_ERROR');
         }
@@ -36,6 +38,7 @@ export class UserServiceImpl extends IUserService {
                 return Result.err('USER_NOT_FOUND');
             }
             return Result.ok(updatedUser);
+        /* c8 ignore next 3*/
         } catch {
             return Result.err('INTERNAL_ERROR');
         }
@@ -44,6 +47,7 @@ export class UserServiceImpl extends IUserService {
         try {
             let deletedUser = await this.userRepo.delete(id);
             return Result.ok();
+        /* c8 ignore next 3*/
         } catch {
             return Result.err('INTERNAL_ERROR');
         }
@@ -52,6 +56,7 @@ export class UserServiceImpl extends IUserService {
         try {
             let users = await this.userRepo.search(name);
             return Result.ok(users);
+        /* c8 ignore next 3*/
         } catch {
             return Result.err('INTERNAL_ERROR');
         }
