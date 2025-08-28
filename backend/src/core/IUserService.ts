@@ -1,6 +1,10 @@
 import { Result } from "../internal/Result";
 import { User } from "../model/User";
+/**
+ * Interface for user-related operations.
+ */
 
+// TODO: add a way to populate leases
 export abstract class IUserService {
     abstract getUser(id: number): Promise<Result<User, UserServiceErr>>;
     abstract createUser(user: User): Promise<Result<User, UserServiceErr>>;
