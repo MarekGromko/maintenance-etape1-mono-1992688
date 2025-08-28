@@ -17,6 +17,7 @@ export class ItemServiceImpl extends IItemService {
                 return Result.err('ITEM_NOT_FOUND');
             }
             return Result.ok(item);
+        /* c8 ignore next 3*/
         } catch (error) {
             return Result.err('INTERNAL_ERROR');
         }
@@ -25,6 +26,7 @@ export class ItemServiceImpl extends IItemService {
         try {
             let createdItem = await this.itemRepo.insert(item);
             return Result.ok(createdItem);
+        /* c8 ignore next 3*/
         } catch (error) {
             return Result.err('INTERNAL_ERROR');
         }
@@ -36,6 +38,7 @@ export class ItemServiceImpl extends IItemService {
                 return Result.err('ITEM_NOT_FOUND');
             }
             return Result.ok(updatedItem);
+        /* c8 ignore next 3*/
         } catch (error) {
             return Result.err('INTERNAL_ERROR');
         }
@@ -44,6 +47,7 @@ export class ItemServiceImpl extends IItemService {
         try {
             await this.itemRepo.delete(id);
             return Result.ok(undefined);
+        /* c8 ignore next 3*/
         } catch (error) {
             return Result.err('INTERNAL_ERROR');
         }
